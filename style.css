@@ -96,7 +96,7 @@ h1 {
   align-items: center;
 }
 
-#numbers {
+.numbers {
   color: var(--very-dark-desaturated-blue);
   font-size: 2rem;
   font-weight: 700;
@@ -157,14 +157,13 @@ footer a {
 
   #background img {
     width: 200%;
-
   }
-  
+
   #circleTop {
     top: -65%;
     left: -140%;
   }
-  
+
   #circleBot {
     bottom: -60%;
     right: -130%;
