@@ -1,3 +1,5 @@
+/* =============================== GERAL =============================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +25,8 @@ body {
   align-items: center;
   /* overflow: hidden; */
 }
+
+/* =============================== CARD =============================== */
 
 main {
   width: 35rem;
@@ -99,6 +103,25 @@ h1 {
   letter-spacing: initial;
 }
 
+/* =============================== BG CIRCLES =============================== */
+
+#background img {
+  position: fixed;
+  z-index: -1;
+}
+
+#circleTop {
+  top: -55%;
+  left: -17%;
+}
+
+#circleBot {
+  bottom: -57%;
+  right: -17%;
+}
+
+/* =============================== FOOTER =============================== */
+
 footer {
   background-image: url(images/bg-pattern-card.svg);
   height: 5rem;
@@ -120,6 +143,7 @@ footer a {
   color: var(--very-dark-desaturated-blue);
 }
 
+/* =============================== RESPONSIVITY =============================== */
 
 @media (max-width: 375px) {
   body {
@@ -129,6 +153,21 @@ footer a {
   main {
     width: 33rem;
     margin-block: 10rem;
+  }
+
+  #background img {
+    width: 200%;
+
+  }
+  
+  #circleTop {
+    top: -65%;
+    left: -140%;
+  }
+  
+  #circleBot {
+    bottom: -60%;
+    right: -130%;
   }
 
   footer {
