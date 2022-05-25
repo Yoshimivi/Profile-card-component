@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 88%);
+
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 62.5%; /*=== 1rem = 10px ===*/
+}
+
+body {
+  background-color: var(--dark-cyan);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+}
+
+main {
+  width: 35rem;
+  background-color: white;
+  border-radius: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+}
+
+#cardBack {
+  border-radius: 1.3rem 1.3rem 0 0;
+}
+
+#profilePic {
+  border-radius: 50%;
+  border: 0.4rem solid white;
+  position: absolute;
+  margin-top: 8.8rem;
+}
+
+h1 {
+  color: var(--very-dark-desaturated-blue);
+  margin-block: 7.2rem 1rem;
+}
+
+#yo {
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+}
+
+#location {
+  color: var(--dark-grayish-blue);
+  justify-self: center;
+  font-size: 1.6rem;
+}
+
+#location::after {
+  content: '';
+  width: 800%;
+  background-color: var(--dark-gray);
+  display: block;
+  height: 0.1rem;
+  margin-bottom: 1rem;
+  align-self: center;
+  justify-self: center;
+  margin-left: -15rem;
+  margin-top: 2.6rem;
+}
+
+#stats {
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  margin-block: 1.5rem 2.4rem;
+}
+
+#followers,
+#likes,
+#photos {
+  color: var(--dark-grayish-blue);
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#numbers {
+  color: var(--very-dark-desaturated-blue);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: initial;
+}
+
+footer {
+  background-image: url(images/bg-pattern-card.svg);
+  height: 5rem;
+  width: 34rem;
+  font-size: 1.2rem;
+  color: var(--dark-grayish-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 4rem;
+  margin-top: 12rem;
+  margin-bottom: -12rem;
+}
+
+footer a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--very-dark-desaturated-blue);
+}
+
+
+@media (max-width: 375px) {
+  body {
+    height: max-content;
+  }
+
+  main {
+    width: 33rem;
+    margin-block: 10rem;
+  }
+
+  footer {
+    width: 30rem;
+    margin: initial;
+    font-size: 1rem;
+  }
+}
